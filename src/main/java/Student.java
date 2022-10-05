@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Student {
@@ -7,16 +8,16 @@ public class Student {
     String Name;
     int age;
     LocalDate dateOfBirth;
-    int ID;
+    int id;
     String userName;
-    ArrayList<String> courses ;
-    ArrayList<String> modules;
+    List<String> courses ;
+    List<String> modules;
 
-    public Student(String name, int age, LocalDate dateOfBirth, int ID, ArrayList<String> courses, ArrayList<String> modules) {
+    public Student(String name, int age, LocalDate dateOfBirth, int id, List<String> courses, List<String> modules) {
         Name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
-        this.ID = ID;
+        this.id = id;
         this.userName = Name + age;
         this.courses = courses;
         this.modules = modules;
@@ -46,12 +47,12 @@ public class Student {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUserName() {
@@ -59,19 +60,19 @@ public class Student {
     }
 
 
-    public ArrayList<String> getCourses() {
+    public List<String> getCourses() {
         return courses;
     }
 
-    public void setCourses(ArrayList<String> courses) {
+    public void setCourses(List<String> courses) {
         this.courses = courses;
     }
 
-    public ArrayList<String> getModules() {
+    public List<String> getModules() {
         return modules;
     }
 
-    public void setModules(ArrayList<String> modules) {
+    public void setModules(List<String> modules) {
         this.modules = modules;
     }
 }

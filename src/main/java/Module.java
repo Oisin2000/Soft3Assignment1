@@ -1,12 +1,13 @@
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Module {
 
     String moduleName;
     String moduleID;
-    ArrayList<String> students = new ArrayList<String>();
-    ArrayList<String> coursesAssociated = new ArrayList<String>();
+    List<String> students;
+    List<String> coursesAssociated;
     String LecturerResponsible;
 
     public String getModuleName() {
@@ -25,19 +26,19 @@ public class Module {
         this.moduleID = moduleID;
     }
 
-    public ArrayList<String> getStudents() {
+    public List<String> getStudents() {
         return students;
     }
 
-    public void setStudents(ArrayList<String> students) {
+    public void setStudents(List<String> students) {
         this.students = students;
     }
 
-    public ArrayList<String> getCoursesAssociated() {
+    public List<String> getCoursesAssociated() {
         return coursesAssociated;
     }
 
-    public void setCoursesAssociated(ArrayList<String> coursesAssociated) {
+    public void setCoursesAssociated(List<String> coursesAssociated) {
         this.coursesAssociated = coursesAssociated;
     }
 

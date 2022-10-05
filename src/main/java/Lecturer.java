@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.List;
 
 
 public class Lecturer {
@@ -6,10 +7,20 @@ public class Lecturer {
     String Name;
     int age;
     LocalDate dateOfBirth;
-    int ID;
+    int id;
     String userName;
-    String[] courses ;
-    String[] modulesTeaching;
+    List<String> courses ;
+    List<String> modulesTeaching;
+
+    public Lecturer(String name, int age, LocalDate dateOfBirth, int id, List<String> courses, List<String> modulesTeaching) {
+        Name = name;
+        this.age = age;
+        this.dateOfBirth = dateOfBirth;
+        this.id = id;
+        this.userName = Name + age;
+        this.courses = courses;
+        this.modulesTeaching = modulesTeaching;
+    }
 
     public String getName() {
         return Name;
@@ -35,12 +46,12 @@ public class Lecturer {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setID(int id) {
+        this.id = id;
     }
 
     public String getUserName() {
@@ -51,19 +62,19 @@ public class Lecturer {
         this.userName = userName;
     }
 
-    public String[] getCourses() {
+    public List<String> getCourses() {
         return courses;
     }
 
-    public void setCourses(String[] courses) {
+    public void setCourses(List<String> courses) {
         this.courses = courses;
     }
 
-    public String[] getModulesTeaching() {
+    public List<String> getModulesTeaching() {
         return modulesTeaching;
     }
 
-    public void setModulesTeaching(String[] modulesTeaching) {
+    public void setModulesTeaching(List<String> modulesTeaching) {
         this.modulesTeaching = modulesTeaching;
     }
 }
