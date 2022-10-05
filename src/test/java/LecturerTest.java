@@ -22,7 +22,7 @@ class LecturerTest {
 
     List<String> modulesTeaching = Arrays.asList("SoftwareEngineering", "Programming", "ProfessionalSkills");
 
-    Lecturer l1 = new Lecturer("Oisin",21, LocalDate.of(2000,12,21),19333846, courses, modulesTeaching );
+    Lecturer l1 = new Lecturer("Michael",30,LocalDate.of(1992,10,05),92333846, courses, modulesTeaching );
 
     @Test
     void getName() {

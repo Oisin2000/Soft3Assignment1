@@ -1,16 +1,24 @@
 import org.joda.time.DateTime;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class CourseProgramme {
 
     String courseName;
-    ArrayList<String> modules = new ArrayList<String>();
-    ArrayList<String> studentsEnrolled = new ArrayList<String>();
+    List<String> modules;
+    List<String> studentsEnrolled ;
     DateTime startDate;
     DateTime endDate;
 
+    public CourseProgramme(String courseName, List<String> modules, List<String> studentsEnrolled, DateTime startDate, DateTime endDate) {
+        this.courseName = courseName;
+        this.modules = modules;
+        this.studentsEnrolled = studentsEnrolled;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
 
     public String getCourseName() {
         return courseName;
@@ -20,19 +28,19 @@ public class CourseProgramme {
         this.courseName = courseName;
     }
 
-    public ArrayList<String> getModules() {
+    public List<String> getModules() {
         return modules;
     }
 
-    public void setModules(ArrayList<String> modules) {
+    public void setModules(List<String> modules) {
         this.modules = modules;
     }
 
-    public ArrayList<String> getStudentsEnrolled() {
+    public List<String> getStudentsEnrolled() {
         return studentsEnrolled;
     }
 
-    public void setStudentsEnrolled(ArrayList<String> studentsEnrolled) {
+    public void setStudentsEnrolled(List<String> studentsEnrolled) {
         this.studentsEnrolled = studentsEnrolled;
     }
 

@@ -8,7 +8,17 @@ public class Module {
     String moduleID;
     List<String> students;
     List<String> coursesAssociated;
-    String LecturerResponsible;
+
+    String lecturerResponsible;
+
+    public Module(String moduleName, String moduleID, List<String> students, List<String> coursesAssociated, String lecturerResponsible)
+    {
+        this.moduleName = moduleName;
+        this.moduleID = moduleID;
+        this.students = students;
+        this.coursesAssociated = coursesAssociated;
+        this.lecturerResponsible = lecturerResponsible;
+    }
 
     public String getModuleName() {
         return moduleName;
@@ -43,10 +53,10 @@ public class Module {
     }
 
     public String getLecturerResponsible() {
-        return LecturerResponsible;
+        return lecturerResponsible;
     }
 
     public void setLecturerResponsible(String lecturerResponsible) {
-        LecturerResponsible = lecturerResponsible;
+        this.lecturerResponsible = lecturerResponsible;
     }
 }
