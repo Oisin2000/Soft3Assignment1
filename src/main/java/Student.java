@@ -13,14 +13,13 @@ public class Student {
     List<String> courses ;
     List<String> modules;
 
-    public Student(String name, int age, LocalDate dateOfBirth, int id, List<String> courses, List<String> modules) {
+    public Student(String name, int age, LocalDate dateOfBirth, int id) {
         Name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
         this.userName = Name + age;
-        this.courses = courses;
-        this.modules = modules;
+
     }
 
     public String getName() {

@@ -18,7 +18,7 @@ class StudentTest {
     List<String> courses = Arrays.asList("2BCT", "3BCT", "4BCT");
     List<String> modules = Arrays.asList("SoftwareEngineering", "Programming", "ProfessionalSkills");
 
-    Student s1 = new Student("Oisin",21, LocalDate.of(2000,12,21),19333846, courses, modules );
+    Student s1 = new Student("Oisin",21, LocalDate.of(2000,12,21),19333846);
 
 
 
