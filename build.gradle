@@ -19,8 +19,6 @@ dependencies {
 
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
-    implementation 'com.github.Oisin2000:Soft3Assignment1:-SNAPSHOT'
-
     implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.7.1.SP1.RELEASE'
 
 }
