@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb4e2856-5f58-4a02-8eef-ecfe761a078d" name="Changes" comment="Removed courses and modules from constructor">
+    <list default="true" id="fb4e2856-5f58-4a02-8eef-ecfe761a078d" name="Changes" comment="Created add methods in each class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lecturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LecturerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,7 +79,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.StudentTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Soft3Assignment1.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Soft3Assignment1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -149,6 +154,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.StudentTest" />
         <item itemvalue="Gradle.StudentTest.getAge" />
         <item itemvalue="Gradle.Soft3Assignment1" />
@@ -227,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665059832661</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created add methods in each class">
+      <created>1665407051913</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665407051913</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +264,7 @@
     <MESSAGE value="Commiting before creating release" />
     <MESSAGE value="Removed com.github.Oisin2000:Soft3Assignment1:-SNAPSHOT" />
     <MESSAGE value="Removed courses and modules from constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed courses and modules from constructor" />
+    <MESSAGE value="Created add methods in each class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created add methods in each class" />
   </component>
 </project>

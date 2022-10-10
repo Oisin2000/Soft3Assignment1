@@ -9,9 +9,9 @@ public class Module {
     List<String> students;
     List<String> coursesAssociated;
 
-    String lecturerResponsible;
+    Lecturer lecturerResponsible;
 
-    public Module(String moduleName, String moduleID, List<String> students, List<String> coursesAssociated, String lecturerResponsible)
+    public Module(String moduleName, String moduleID, Lecturer lecturerResponsible)
     {
         this.moduleName = moduleName;
         this.moduleID = moduleID;
@@ -52,11 +52,11 @@ public class Module {
         this.coursesAssociated = coursesAssociated;
     }
 
-    public String getLecturerResponsible() {
+    public Lecturer getLecturerResponsible() {
         return lecturerResponsible;
     }
 
-    public void setLecturerResponsible(String lecturerResponsible) {
+    public void setLecturerResponsible(Lecturer lecturerResponsible) {
         this.lecturerResponsible = lecturerResponsible;
     }
 }

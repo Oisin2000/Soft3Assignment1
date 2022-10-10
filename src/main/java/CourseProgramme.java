@@ -9,7 +9,7 @@ public class CourseProgramme {
     String courseName;
 
     ArrayList<Module> courseModules = new ArrayList<>();
-    ArrayList<CourseProgramme> studentsEnrolled = new ArrayList<>();
+    ArrayList<Student> studentsEnrolled = new ArrayList<>();
     DateTime startDate;
     DateTime endDate;
 
@@ -35,11 +35,11 @@ public class CourseProgramme {
         this.courseModules = courseModules;
     }
 
-    public ArrayList<CourseProgramme> getStudentsEnrolled() {
+    public ArrayList<Student> getStudentsEnrolled() {
         return studentsEnrolled;
     }
 
-    public void setStudentsEnrolled(ArrayList<CourseProgramme> studentsEnrolled) {
+    public void setStudentsEnrolled(ArrayList<Student> studentsEnrolled) {
         this.studentsEnrolled = studentsEnrolled;
     }
 
@@ -62,6 +62,12 @@ public class CourseProgramme {
     public void addCourseModule(Module module){
 
         courseModules.add(module);
+
+    }
+
+    public void addStudent(Student student){
+
+        studentsEnrolled.add(student);
 
     }
 }
