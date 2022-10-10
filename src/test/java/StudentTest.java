@@ -15,8 +15,6 @@ class StudentTest {
     LocalDate dateOfBirth = LocalDate.of(2000,12,21);
     int id = 19333846;
     String username = name+age;
-    List<String> courses = Arrays.asList("2BCT", "3BCT", "4BCT");
-    List<String> modules = Arrays.asList("SoftwareEngineering", "Programming", "ProfessionalSkills");
 
     Student s1 = new Student("Oisin",21, LocalDate.of(2000,12,21),19333846);
 
@@ -54,17 +52,6 @@ class StudentTest {
         Assertions.assertEquals(username, s1.getUserName());
     }
 
-    @Test
-    void getCourses() {
 
-        Assertions.assertEquals(courses, s1.getCourses());
 
-    }
-
-    @Test
-    void getModules() {
-
-        Assertions.assertEquals(modules, s1.getModules());
-
-    }
 }

@@ -11,12 +11,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class CourseProgrammeTest {
 
     String courseName = "4BCT";
-    List<String> modules = Arrays.asList("SoftwareEngineering", "Programming", "ProfessionalSkills");
-    List<String> studentsEnrolled = Arrays.asList("Oisin", "Liam", "Naarayana") ;
+
     DateTime startDate =  DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2022-09-04");
     DateTime endDate = DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2023-05-24");
 
-    CourseProgramme cp1 = new CourseProgramme("4BCT",modules,studentsEnrolled,startDate,endDate);
+    CourseProgramme cp1 = new CourseProgramme("4BCT",startDate,endDate);
 
     @Test
     void getCourseName() {
@@ -25,19 +24,6 @@ class CourseProgrammeTest {
 
     }
 
-    @Test
-    void getModules() {
-
-        Assertions.assertEquals(modules, cp1.getModules());
-
-    }
-
-    @Test
-    void getStudentsEnrolled() {
-
-        Assertions.assertEquals(studentsEnrolled, cp1.getStudentsEnrolled());
-
-    }
 
     @Test
     void getStartDate() {

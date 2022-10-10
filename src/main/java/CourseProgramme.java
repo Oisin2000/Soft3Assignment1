@@ -7,15 +7,14 @@ import java.util.List;
 public class CourseProgramme {
 
     String courseName;
-    List<String> modules;
-    List<String> studentsEnrolled ;
+
+    ArrayList<Module> courseModules = new ArrayList<>();
+    ArrayList<CourseProgramme> studentsEnrolled = new ArrayList<>();
     DateTime startDate;
     DateTime endDate;
 
-    public CourseProgramme(String courseName, List<String> modules, List<String> studentsEnrolled, DateTime startDate, DateTime endDate) {
+    public CourseProgramme(String courseName,  DateTime startDate, DateTime endDate) {
         this.courseName = courseName;
-        this.modules = modules;
-        this.studentsEnrolled = studentsEnrolled;
         this.startDate = startDate;
         this.endDate = endDate;
     }
@@ -28,19 +27,19 @@ public class CourseProgramme {
         this.courseName = courseName;
     }
 
-    public List<String> getModules() {
-        return modules;
+    public ArrayList<Module> getModules() {
+        return courseModules;
     }
 
-    public void setModules(List<String> modules) {
-        this.modules = modules;
+    public void setModules(ArrayList<Module> courseModules) {
+        this.courseModules = courseModules;
     }
 
-    public List<String> getStudentsEnrolled() {
+    public ArrayList<CourseProgramme> getStudentsEnrolled() {
         return studentsEnrolled;
     }
 
-    public void setStudentsEnrolled(List<String> studentsEnrolled) {
+    public void setStudentsEnrolled(ArrayList<CourseProgramme> studentsEnrolled) {
         this.studentsEnrolled = studentsEnrolled;
     }
 
@@ -58,6 +57,12 @@ public class CourseProgramme {
 
     public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
+    }
+
+    public void addCourseModule(Module module){
+
+        courseModules.add(module);
+
     }
 }
 

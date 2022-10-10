@@ -18,11 +18,8 @@ class LecturerTest {
 
     String username = name+age;
 
-    List<String> courses = Arrays.asList("2BCT", "3BCT", "4BCT");
 
-    List<String> modulesTeaching = Arrays.asList("SoftwareEngineering", "Programming", "ProfessionalSkills");
-
-    Lecturer l1 = new Lecturer("Michael",30,LocalDate.of(1992,10,05),92333846, courses, modulesTeaching );
+    Lecturer l1 = new Lecturer("Michael",30,LocalDate.of(1992,10,05),92333846 );
 
     @Test
     void getName() {
@@ -56,17 +53,5 @@ class LecturerTest {
         Assertions.assertEquals(username, l1.getUserName());
     }
 
-    @Test
-    void getCourses() {
 
-        Assertions.assertEquals(courses, l1.getCourses());
-
-    }
-
-    @Test
-    void getModules() {
-
-        Assertions.assertEquals(modulesTeaching, l1.getModulesTeaching());
-
-    }
 }

@@ -10,8 +10,9 @@ public class Student {
     LocalDate dateOfBirth;
     int id;
     String userName;
-    List<String> courses ;
-    List<String> modules;
+
+    ArrayList<CourseProgramme> studentCourses = new ArrayList<>();
+    ArrayList<Module> studentModules = new ArrayList<>();
 
     public Student(String name, int age, LocalDate dateOfBirth, int id) {
         Name = name;
@@ -59,20 +60,26 @@ public class Student {
     }
 
 
-    public List<String> getCourses() {
-        return courses;
+    public ArrayList<CourseProgramme> getCourses() {
+        return studentCourses;
     }
 
-    public void setCourses(List<String> courses) {
-        this.courses = courses;
+    public void setCourses(ArrayList<CourseProgramme> studentCourses) {
+        this.studentCourses = studentCourses;
     }
 
-    public List<String> getModules() {
-        return modules;
+    public ArrayList<Module> getModules() {
+        return studentModules;
     }
 
-    public void setModules(List<String> modules) {
-        this.modules = modules;
+    public void setModules(ArrayList<Module> studentModules) {
+        this.studentModules = studentModules;
+    }
+
+    public void addStudentModule(Module module){
+
+        studentModules.add(module);
+
     }
 }
 
