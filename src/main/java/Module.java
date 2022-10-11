@@ -62,11 +62,10 @@ public class Module {
 
     @Override
     public String toString() {
-        return "Module : " +
-                "\n Name : " + moduleName  +
+        return "\n " + moduleName  +
                 "\n ID : " + moduleID +
-                "\n Lecturer : " + lecturerResponsible
-                ;
+                "\n Lecturer : " + lecturerResponsible.getName() +
+                "\n";
     }
 
 }

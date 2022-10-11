@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb4e2856-5f58-4a02-8eef-ecfe761a078d" name="Changes" comment="Added toString methods to each class">
+    <list default="true" id="fb4e2856-5f58-4a02-8eef-ecfe761a078d" name="Changes" comment="Adjusting toStrings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lecturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665481221909</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Adjusting toStrings">
+      <created>1665483835666</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665483835666</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +297,7 @@
     <MESSAGE value="Making main method in driver project first while trying to connect both projects" />
     <MESSAGE value="Commented out dependency" />
     <MESSAGE value="Added toString methods to each class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added toString methods to each class" />
+    <MESSAGE value="Adjusting toStrings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusting toStrings" />
   </component>
 </project>

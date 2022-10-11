@@ -7,30 +7,30 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String []args){
+    public static void main(String[] args) {
 
 
-    Student Oisin = new Student("Oisin", 21, LocalDate.of(2000,12,21),19333846);
-    Student Liam = new Student("Liam", 22, LocalDate.of(1999,8,05),19333855);
-    Student Naarayana = new Student("Naarayana", 20, LocalDate.of(2001,11,24),19333899);
-    Student Fred = new Student("Fred", 21, LocalDate.of(2000,9,11),19337779);
+        Student Oisin = new Student("Oisin", 21, LocalDate.of(2000, 12, 21), 19333846);
+        Student Liam = new Student("Liam", 22, LocalDate.of(1999, 8, 05), 19333855);
+        Student Naarayana = new Student("Naarayana", 20, LocalDate.of(2001, 11, 24), 19333899);
+        Student Fred = new Student("Fred", 21, LocalDate.of(2000, 9, 11), 19337779);
 
-    Lecturer MS = new Lecturer("Michael Schukat",45,LocalDate.of(1977,10,11),19345679);
-    Lecturer AB = new Lecturer("Attracta Brennan",40,LocalDate.of(1982,11,1),19545670);
-    Lecturer JD = new Lecturer("Jim Duggan",43,LocalDate.of(1994,12,9),19344219);
-    Lecturer FG = new Lecturer("Frank Glavin",35,LocalDate.of(1987,3,25),19888679);
-    Lecturer COR = new Lecturer("Colm O Riordan",41,LocalDate.of(1981,5,15),19883229);
+        Lecturer MS = new Lecturer("Michael Schukat", 45, LocalDate.of(1977, 10, 11), 19345679);
+        Lecturer AB = new Lecturer("Attracta Brennan", 40, LocalDate.of(1982, 11, 1), 19545670);
+        Lecturer JD = new Lecturer("Jim Duggan", 43, LocalDate.of(1994, 12, 9), 19344219);
+        Lecturer FG = new Lecturer("Frank Glavin", 35, LocalDate.of(1987, 3, 25), 19888679);
+        Lecturer COR = new Lecturer("Colm O Riordan", 41, LocalDate.of(1981, 5, 15), 19883229);
 
 
-    Module SoftwareEngineering = new Module("Software Engineering 3", "CT417",MS);
-    Module ProfessionalSkills = new Module("Advanced Professional Skills", "CT436",AB);
-    Module Modelling = new Module("Simulation and Modelling", "CT561",JD);
-    Module MachineLearning = new Module("Machine Learning", "CT4104",FG);
-    Module InfoRetrieval = new Module("Information Retrieval", "CT4100",COR);
+        Module SoftwareEngineering = new Module("Software Engineering 3", "CT417", MS);
+        Module ProfessionalSkills = new Module("Advanced Professional Skills", "CT436", AB);
+        Module Modelling = new Module("Simulation and Modelling", "CT561", JD);
+        Module MachineLearning = new Module("Machine Learning", "CT4104", FG);
+        Module InfoRetrieval = new Module("Information Retrieval", "CT4100", COR);
 
-    CourseProgramme BCT = new CourseProgramme("Computer Science and IT",DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2022-09-04"),DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2023-05-04"));
-    CourseProgramme GY125 = new CourseProgramme("Digital Arts and Technology",DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2022-09-11"),DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2023-05-02"));
-    CourseProgramme GY414 = new CourseProgramme("Electrical and Electronic Engineering",DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2022-09-02"),DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2023-05-10"));
+        CourseProgramme BCT = new CourseProgramme("Computer Science and IT", DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2022-09-04"), DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2023-05-04"));
+        CourseProgramme GY125 = new CourseProgramme("Digital Arts and Technology", DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2022-09-11"), DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2023-05-02"));
+        CourseProgramme GY414 = new CourseProgramme("Electrical and Electronic Engineering", DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2022-09-02"), DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime("2023-05-10"));
 
 
         //adding modules to each student
@@ -50,6 +50,13 @@ public class Main {
         Fred.addStudentModule(InfoRetrieval);
         Fred.addStudentModule(Modelling);
         Fred.addStudentModule(ProfessionalSkills);
+
+        //adding courses to each student
+
+        Oisin.addStudentCourse(BCT);
+        Liam.addStudentCourse(BCT);
+        Naarayana.addStudentCourse(GY125);
+        Fred.addStudentCourse(GY414);
 
         //adding modules to each course
 
@@ -112,21 +119,32 @@ public class Main {
         allCourses.add(GY125);
         allCourses.add(GY414);
 
+        System.out.println(" \n" );
+        System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" );
+        System.out.println(" \n" );
+        System.out.println("List of all Students \n" );
 
-        for (int x=0; x<allStudents.size(); x++)
-            System.out.println(allStudents.get(x));
+        for (int x = 0; x < allStudents.size(); x++)
+            System.out.println("\n \n \n -------Student-------"+allStudents.get(x));
 
+        System.out.println(" \n" );
+        System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" );
+        System.out.println(" \n" );
+        System.out.println("List of all Courses \n" );
 
+        for (int x = 0; x < allCourses.size(); x++)
+            System.out.println(allCourses.get(x));
 
+        System.out.println(" \n" );
+        System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" );
+        System.out.println(" \n" );
+        System.out.println("List of all Modules \n" );
 
+        for (int x = 0; x < allModules.size(); x++)
+            System.out.println(allModules.get(x));
 
-
-
-
-
-
-
-
-
+        System.out.println(" \n" );
+        System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" );
+        System.out.println(" \n" );
     }
 }

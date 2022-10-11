@@ -88,8 +88,7 @@ public class Lecturer {
 
     @Override
     public String toString() {
-        return "Lecturer = " +
-                "Name = " + Name  ;
+        return "Name = " + Name  ;
     }
 }
 
