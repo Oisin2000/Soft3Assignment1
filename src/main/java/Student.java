@@ -92,14 +92,14 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student : " +
+        return "\n Student : " +
                 "\n Name : " + Name  +
                 "\n age : " + age +
                 "\n Date Of Birth : " + dateOfBirth +
                 "\n id : " + id +
                 "\n UserName : " + userName  +
                 "\n Modules : " + studentModules +
-                "\n Courses registered for : " + studentCourses ;
+                "\n Courses registered for : \n" + studentCourses ;
     }
 }
 
