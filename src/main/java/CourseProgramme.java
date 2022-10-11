@@ -70,5 +70,14 @@ public class CourseProgramme {
         studentsEnrolled.add(student);
 
     }
+
+    @Override
+    public String toString() {
+        return "Course : " +
+                "\n Name : " + courseName  +
+                "\n Start Date : " + startDate +
+                "\n End Date : " + endDate
+                ;
+    }
 }
 

@@ -59,4 +59,14 @@ public class Module {
     public void setLecturerResponsible(Lecturer lecturerResponsible) {
         this.lecturerResponsible = lecturerResponsible;
     }
+
+    @Override
+    public String toString() {
+        return "Module : " +
+                "\n Name : " + moduleName  +
+                "\n ID : " + moduleID +
+                "\n Lecturer : " + lecturerResponsible
+                ;
+    }
+
 }

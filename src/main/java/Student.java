@@ -12,6 +12,8 @@ public class Student {
     String userName;
     ArrayList<Module> studentModules = new ArrayList<>();
 
+    ArrayList<CourseProgramme> studentCourses = new ArrayList<>();
+
     public Student(String name, int age, LocalDate dateOfBirth, int id) {
         Name = name;
         this.age = age;
@@ -74,16 +76,30 @@ public class Student {
 
     }
 
+    public ArrayList<CourseProgramme> getCourses() {
+        return studentCourses;
+    }
+
+    public void setCourses(ArrayList<CourseProgramme> studentCourses) {
+        this.studentCourses = studentCourses;
+    }
+
+    public void addStudentCourse(CourseProgramme course){
+
+        studentCourses.add(course);
+
+    }
+
     @Override
     public String toString() {
-        return "Student{" +
-                "Name='" + Name + '\'' +
-                ", age=" + age +
-                ", dateOfBirth=" + dateOfBirth +
-                ", id=" + id +
-                ", userName='" + userName + '\'' +
-                ", studentModules=" + studentModules +
-                '}';
+        return "Student : " +
+                "\n Name : " + Name  +
+                "\n age : " + age +
+                "\n Date Of Birth : " + dateOfBirth +
+                "\n id : " + id +
+                "\n UserName : " + userName  +
+                "\n Modules : " + studentModules +
+                "\n Courses registered for : " + studentCourses ;
     }
 }
 

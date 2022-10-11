@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
@@ -16,9 +17,9 @@ class ModuleTest {
 
     List<String> coursesAssociated = Arrays.asList("Oisin", "Liam", "Naarayana");
 
-    String lecturerResponsible = "Michael Schukat";
+    Lecturer lecturerResponsible = new Lecturer("Michael Schukat",45, LocalDate.of(1977,10,11),19345679);
 
-    Module m1 = new Module("Software Engineering 3","CT417",students,coursesAssociated,"Michael Schukat");
+    Module m1 = new Module("Software Engineering 3","CT417",lecturerResponsible);
 
     @Test
     void getModuleName() {
