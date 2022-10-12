@@ -35,19 +35,6 @@ class ModuleTest {
 
     }
 
-    @Test
-    void getStudents() {
-
-        Assertions.assertEquals(students, m1.getStudents());
-
-    }
-
-    @Test
-    void getCoursesAssociated() {
-
-        Assertions.assertEquals(coursesAssociated, m1.getCoursesAssociated());
-
-    }
 
     @Test
     void getLecturerResponsible() {
